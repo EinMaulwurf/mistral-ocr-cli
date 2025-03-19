@@ -1,0 +1,3 @@
+mistralai
+markdown2
+latex2mathml
