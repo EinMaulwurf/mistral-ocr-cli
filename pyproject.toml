@@ -1,0 +1,9 @@
+[project]
+name = "mistral-ocr-cli"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "latex2mathml>=3.78.0",
+    "markdown2>=2.5.3",
+    "mistralai>=1.7.0",
+]
