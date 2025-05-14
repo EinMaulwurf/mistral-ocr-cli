@@ -1,9 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "mistral-ocr-cli"
+name = "mistral-ocr"
 version = "0.1.0"
+description = "Convert pdf or images to text via Mistral OCR api."
 requires-python = ">=3.13"
 dependencies = [
     "latex2mathml>=3.78.0",
     "markdown2>=2.5.3",
     "mistralai>=1.7.0",
 ]
+
+[project.scripts]
+# This creates the command-line tool
+# format is: command_name = module_name:function_name
+mistral-ocr = "mistral_ocr:main"
